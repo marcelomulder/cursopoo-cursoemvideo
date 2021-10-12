@@ -1,0 +1,46 @@
+Classe Conta
++ numConta
+# tipo (conta corrente ou poupança)
+- dono
+- saldo
+- status
++ abrirConta()
++ fecharConta()
++ depositar()
++ sacar()
++ pagarMensal()
+
+Construtor
+ - Status de abertura é falso
+ - Saldo = 0
+
+
+Donos
+- Jubileu
+    - Ele tem 300 reais
+    - Ele abriu uma conta poupança
+
+
+- Creusa
+    - Ela tem 500 reais
+    - Ela abriu uma conta corrente
+    - Ela sacou 100 reais
+
+Benefícios de criação de conta
+    - tipo de conta: cp ou cc
+    - Metodo abrirConta:
+        - status = aberta ou fechada
+        - tipo = cc ou cp
+        - abrir cc = ganha 50 reais
+        - abrir cp = ganha 150 reais
+    - Metodo fecharConta:
+        - não pode ter dinheiro na conta
+        - não pode estar em débito
+    - Metodo depositar:
+        - a conta tem que estar aberta (status verdadeiro)
+    - Metedo sacar:
+        - conta tem que estar aberta
+        - e tem que saldo e sacar só o que tem de saldo
+    - Metodo pagarMensal
+        - cada vez q for chamada, pagar a mensalidade
+        - CC paga 12 reais e CP 20 reais
