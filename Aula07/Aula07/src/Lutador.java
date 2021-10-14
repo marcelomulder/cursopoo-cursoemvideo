@@ -1,5 +1,6 @@
 
 public class Lutador {
+    //Atributos
     private String nome;
     private String nacionalidade;
     private int idade;
@@ -9,7 +10,8 @@ public class Lutador {
     private int vitorias;
     private int derrotas;
     private int empates;
-
+    
+    //Método Construtor
     public Lutador(String nome, String nacionalidade, int idade, double altura, double peso, int vitorias, int derrotas, int empates) {
         this.nome = nome;
         this.nacionalidade = nacionalidade;
@@ -20,7 +22,8 @@ public class Lutador {
         this.derrotas = derrotas;
         this.empates = empates;
     }
-
+    
+    
     public String getNome() {
         return nome;
     }
@@ -127,19 +130,19 @@ public class Lutador {
 
     public void ganharLuta(){
 
-        setVitorias(getVitorias() + 1);
+        this.setVitorias(getVitorias() + 1);
 
     }
 
     public void perderLuta(){
 
-        setDerrotas(getDerrotas() + 1);
+        this.setDerrotas(getDerrotas() + 1);
 
     }
 
     public void empatarLuta(){
 
-        setEmpates(getEmpates() + 1);
+        this.setEmpates(getEmpates() + 1);
 
     }
 
